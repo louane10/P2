@@ -1,60 +1,46 @@
 /****** General ***********/
-.header {
-    width: 1440px;
-    height: 79px;
+body { margin: 0;}
+header {
+    display: flex;
+    justify-content: space-between;
+  
 }
 * {
     font-family: 'Raleway', sans-serif;
 }
 
-#Logo {
-    width: Hug (161.09px);
-    height: Hug (79px);
-    padding: 30px 50px 30px 50px;
-    gap: 10px;
-}
+#Logo {padding-top: 20px; padding-bottom: 10px;}
 #petitlogo { width: 61.09px; height: 19px;}
 
 
 
 .navigation {
     display: flex;
-    width: Hug (344px);
-    height: Hug (35px) ;
     left: 1096px;
-    gap: 68px;
-    padding: 50px 0px 50px;
     
 }
 .button {
     display: flex;
-    width: Hug (244px);
-    height: Hug (35px);
+
     gap: 68px;
     margin: 0;
 }
-li {display: flex;}
-li:hover { color: #0065FC;}
-li:hover{border-top: 2px solid #0065FC; padding-top: 13.5px;}
+.navigation li {display: flex; border-top: 2px solid #FFF; padding-top: 10px;}
+.navigation li:hover { color: #0065FC;}
+.navigation li:hover{border-top: 2px solid #0065FC;}
 
 .groupheader {
-    width: Fill (1340px);
-    height: hug (281px);
     gap: 35px;
 }
 
 .infogroup {
     display: flex;
-    width: Fill (1,340px);
-    height: Hug (281px);
     gap: 35px;}
 
 .headline {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: Fill (1,340px);
-    height: Fixed (53px);
 }
 
 .titreintro {
@@ -65,6 +51,8 @@ li:hover{border-top: 2px solid #0065FC; padding-top: 13.5px;}
     font-size: 22px;
     line-height: 25.83px;
     margin: 0;
+    padding-top: 40px;
+    
 }
 
 .introsubtitle {
@@ -73,14 +61,13 @@ li:hover{border-top: 2px solid #0065FC; padding-top: 13.5px;}
 }
 
 .search-container {
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
 }
 
+.formulaire {display: flex;}
+
 .location-icon {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 50px;
     height: 49px;
     border-radius: 15px 0px 0px 15px;
@@ -91,25 +78,24 @@ li:hover{border-top: 2px solid #0065FC; padding-top: 13.5px;}
 }
 
 .location-icon i {
-    font-size: 24px; 
+    font-size: 20px; 
     color: black; 
 }
 
-input[type=texte] {
-    width: 300px;
-     padding: 12px 40px 12px 60px;
+.formulaire .input-recherche {
      border: 1px solid;
      border-radius: 15px;
      border-color: #F2F2F2;
-    box-sizing: border-box;
     text-align: center; 
-    line-height: 21.13px; font-size: 18px; font-weight: 700;
     font-size: 18px; 
     font-weight: bold;
-    position: relative;
+}
+.formulaire .input-recherche::placeholder {
+font-weight: bold;
+color: black;
 }
 
-input[type=submit] {
+.formulaire input[type=submit] {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -117,8 +103,6 @@ input[type=submit] {
     border: 1px solid transparent;
     border-radius: 0px 15px 15px 0px;
     cursor: pointer;
-    width: Hug (132px);
-    height: Fixed (49px);
 }
 
 .fa-location-dot  {
@@ -261,6 +245,9 @@ a {
 .hebergements {
     width: 65%;
 }
+.hebergements-cards a {
+    width: 30%
+}
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
@@ -271,12 +258,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    display: flex;
     margin-top: 33px;
 }
 .hebergements-cards img {
-    width: 250.33px;
-    height: 124px;
+    height: 100px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -291,6 +277,7 @@ a {
 .hebergements-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    display: flex;
 }
 .hebergements-cards .card-subtitle {
     margin: 0;
@@ -298,14 +285,9 @@ a {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
-.deuxlignes {
-    display: flex;
-    width: Fill (811px);
-    height: Hug (207.25px);
-    gap: 30px;
-}
+
 .afficherplus {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /****** Populaires ***********/
@@ -355,10 +337,37 @@ a {
 
 /*activités*/
 
+.activites-cards a {
+    width: 30%
+}
 
-
-
-
+.Activites {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+}
+.Activites section {
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.activites-cards img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.activites-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
 
 
 
