@@ -337,20 +337,19 @@ a {
 
 /*activités*/
 
+.activites-cards .card-title {
+    padding-left: 10px;
+}
 .activites-cards a {
-    width: 30%
+    width: 25%;
 }
 
 .Activites {
     display: flex;
     padding-top: 20px;
-    width: 100%;
+    flex-direction: column;
 }
-.Activites section {
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
+
 .activites-cards img {
     width: 100%;
     border-top-left-radius: 20px;
@@ -359,19 +358,31 @@ a {
 .activites-cards .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
+    margin: 10px;
 }
 .activites-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    
+}
+.Activites h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+/*footer*/
+.bodyfooter {
+    display: flex;
+    background-color: var(--main-bg-color);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+.footercontent {
+    display: flex;
+    justify-content: space-between;
 
-
-
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
