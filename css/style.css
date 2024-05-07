@@ -267,7 +267,6 @@ a {
     border-top-right-radius: 20px;
 }
 .hebergements-cards .card-content {
-    width: 67%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -356,8 +355,7 @@ a {
     border-top-right-radius: 20px;
 }
 .activites-cards .card {
-    display: flex;
-    flex-direction: column;
+   
     box-sizing: border-box;
     margin: 10px;
 }
@@ -374,17 +372,23 @@ a {
 .bodyfooter {
     display: flex;
     background-color: var(--main-bg-color);
-    padding: 30px;
+    padding: 20px;
     box-sizing: border-box;
     margin-top: 40px;
+    justify-content: space-between;
 }
 .footercontent {
     display: flex;
     justify-content: space-between;
 
 }
+.footertxt {
+    margin-right: 200px;
+}
 
-
+.footertitle {
+    font-size: 18px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
