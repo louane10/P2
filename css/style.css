@@ -16,6 +16,7 @@ header {
     --filter-bg-color: #DEEBFF;
 }
 
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -82,7 +83,6 @@ a {
 
 .titreintro {
     display: flex;
-    width: 1340px;
     height: 26px;
     font-weight: 700;
     font-size: 22px;
@@ -145,11 +145,28 @@ color: black;
     cursor: pointer;
 }
 
+.boutonmobile {
+    display: none;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    padding: 15px 16px;
+    border: 1px solid transparent;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+.boutonmobile .fa-solid {
+    color: #FFF;
+}
+
 .fa-location-dot  {
      position:absolute;
      left: 18px; 
     top: 15px;
 }
+
+
 
 /* Barre de Filtre */
 
@@ -204,7 +221,7 @@ color: black;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
-    width: 1306px; height: 19px;
+    
 }
 
 .info-message i {
@@ -395,11 +412,10 @@ color: black;
 .footercontent {
     display: flex;
     justify-content: space-between;
+    width: 30%;
 
 }
-.footertxt {
-    margin-right: 200px;
-}
+
 
 .footertitle {
     font-size: 18px;
@@ -518,7 +534,7 @@ color: black;
         display: flex;
     justify-content: space-between;
     font-size: 19px;
-    width: 80%;
+    width: 100%;
     }
 
     .navigation ul {
@@ -526,6 +542,8 @@ color: black;
         justify-content: space-between;
         list-style: none;
         text-align: center;
+        width: 100%;
+        gap: 0;
     }
 
     .navigation li {
@@ -533,6 +551,8 @@ color: black;
     padding-bottom: 10px;
     border-bottom: 3px solid #f2f2f2;
     transition: 0.1s ease;
+    width: 50%;
+    justify-content: center;
     }
 
     .navigation li:hover {
@@ -550,12 +570,10 @@ color: black;
     /*Titre intro */
 
     .headline h1 {
-        margin-bottom: 20px;
-        width: 400px;
+        margin-bottom: 50px;
     }
 
     .headline .introsubtitle {
-        width: 500px;
         margin-top: 30px;
     }
 
@@ -565,6 +583,14 @@ color: black;
     .search-container {
         margin-left: 20px;
         margin-bottom: 40px;
+    }
+
+    .boutonmobile {
+        display: block;
+    }
+
+    .boutonrecherche {
+        display: none;
     }
 
 
@@ -606,16 +632,14 @@ color: black;
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
-    .hebergements-and-populaires section {
-        background-color: #FFF;
+    .hebergements {
+        background-color: #FFF !important;
+        border-radius: 0;
     }
 
 
     /* Hébergements */
 
-    .hebergements {
-    
-    }
     .hebergements-cards {
         flex-direction: column;
         height: 50%;
@@ -629,6 +653,7 @@ color: black;
 
     .populaires {
         margin-top: 0;
+        border-radius: 0 !important;
     
     }  
     
@@ -640,14 +665,6 @@ color: black;
 
     .populaires-cards a {
         width: 100%;
-    }
-
-    .populaires-cards .card-title {
-        
-    }
-
-    .populaires-cards .card-subtitle {
-        
     }
 
 
@@ -668,7 +685,7 @@ color: black;
 
     .activites-cards {
         flex-direction: column;
-        width: 370px;
+        width: 90%;
     }
 
     .activites-cards a {
@@ -680,26 +697,22 @@ color: black;
 
     .bodyfooter {
         flex-direction: column;
-        width: 700px;
     }
 
     .footercontent {
+        width: 100%;
       
     }
     .footertxt {
-        padding: 15px;    
+        padding: 10px;    
     }
 
     .footertitle {
-        
+        margin-top: 20px;
     }
 
     .footersubtitle {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
-    .navigation {
-        
-    }
-    
 }
