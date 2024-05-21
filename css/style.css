@@ -206,7 +206,7 @@ color: black;
 }
 
 .filter-item i {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .filter-item span {
@@ -478,7 +478,7 @@ color: black;
     }
     .footertxt {
         max-width: 700px;
-        margin-right: 50px;
+        margin-right: 40px;
     }
     .footertitle {
         max-width: 700px;
@@ -533,7 +533,7 @@ color: black;
     .navigation {
         display: flex;
     justify-content: space-between;
-    font-size: 19px;
+    font-size: 16px;
     width: 100%;
     }
 
@@ -570,7 +570,7 @@ color: black;
     /*Titre intro */
 
     .headline h1 {
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
 
     .headline .introsubtitle {
@@ -583,6 +583,7 @@ color: black;
     .search-container {
         margin-left: 20px;
         margin-bottom: 40px;
+        margin-right: 10px;
     }
 
     .boutonmobile {
@@ -602,11 +603,10 @@ color: black;
         align-items: center;
         width: 100%;
         flex-wrap: wrap;
-        width: 400px;
     }
 
     .filter-group {
-        justify-content: space-between;
+
         width: 100%;
         flex-wrap: wrap;
     }
@@ -614,6 +614,8 @@ color: black;
     .filter-item {
         width: 47%;
         margin-top: 20px;
+        margin-right: 5px;
+        padding: 10px 20px;
     }
 
     .info-message {
@@ -646,6 +648,9 @@ color: black;
     }
     .hebergements-cards a {
         width: 100%;
+    }
+    .afficherplus {
+        margin-top: 20px;
     }
 
 
